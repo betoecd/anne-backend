@@ -1,3 +1,5 @@
 mongo-volume
 env/anne*
 users/migrations
+core/__pycache__/
+users/__pycache__/
