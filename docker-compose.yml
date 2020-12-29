@@ -1,13 +1,15 @@
 version: '3'
 
+volumes:
+    anne-db-data:
+
 services:
     database:
-        image: 'mongo'
-        container_name: 'anne-mongo-container'
+        image: 'postgres'
+        container_name: 'anne-postgres-container'
         env_file:
-            - ./env/anne-mongo.env
+            - ./env/anne-postgres.env
         volumes:
-            - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
-            - ./mongo-volume:/data/db
+            - anne-db-data:/var/lib/postgres/data/
         ports:
-            - '27017-27019:27017-27019'
+            - 5434:5432

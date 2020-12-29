@@ -80,9 +80,10 @@ DATABASES = {
     'default': {
         'ENGINE': DB_ENGINE,
         'NAME': DB_NAME,
-        'CLIENT': {
-            'host': DB_HOST,
-        }
+        'USER': DB_USER,
+        'PASSWORD': DB_PASS,
+        'HOST': DB_HOST,
+        'PORT': DB_PORT,
     }
 }
 

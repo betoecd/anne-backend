@@ -4,7 +4,7 @@
 Repo for creating an API server in Django, using:
 * GraphQL
 * JWT
-* MongoDB
+* Postgres
 
 ## Initial Setup
 Use the docker compose command to pull and configure the mongodb container
